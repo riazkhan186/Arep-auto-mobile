@@ -719,6 +719,9 @@
     .project-card .p-footer{
         padding: 23px 0;
     }
+    .project-card {
+        padding:0  0px 0 15px;
+    }
     .projects-footer h4{
         font-size: 15px;
     }
@@ -728,6 +731,7 @@
     .projects-footer .s-button{
         padding: 5px 15px;
     }
+
 }
 @media screen and (max-width:1600px){
     .home2-wrapper .project-text .project-inner-text{

@@ -10,24 +10,29 @@
             }
         });
     });
+    $(document).ready(function () {
+        // for sticky navbar
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 0) {
+                $(".gototop").addClass("gotobtn");
+            }
+            else {
+                $(".gototop").removeClass("gotobtn");
+            }
+        });
+    });
 
       // menu bar hide on click li
       $(document).ready(function () {
 
         $('.navbar-toggler').click(function () {
-            // $('.navbar-toggler').addClass("collapsed");
-            // $(".navbar-collapse").toggle();
             $('.collapse').toggle();
 
         });
     });
 
-    $('.navbar-collapse a').click(function () {
-        // $('.navbar-toggler').addClass("collapsed");
+    $('.navbar-collapse .c-hide').click(function () {
         $(".navbar-collapse").toggle();
-        // $('.collapse').toggle();
-        // $(".navbar-collapse").collapse('hide');
-
     });
 
 
@@ -102,20 +107,20 @@
                 }
             }
         });
+        
         $('.feedback-slider').owlCarousel({
             center:true,
             items: 1,
             loop: true,
-            // autoplay: true,
-            // autoplayTimeout: 4000,
+            autoplay: true,
+            autoplayTimeout: 4000,
             autoplayHoverPause: true,
-            
-
         });
         //   venobox for video
-        $(document).ready(function(){
-            $('.venobox').venobox(); 
-        });
+        // $('.venobox').venobox(); 
 
     });
+    // $(document).ready(function(){
+       
+    // });
 })(jQuery)
